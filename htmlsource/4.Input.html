@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ввод</title>
+</head>
+
+<body>
+    <h1>Ввод</h1>
+    <!--Пример кода с <input type="text" -->
+    <form action="/New-action">
+        <input type="text" placeholder="1234567890">
+        <p></p>
+        <!-- Filler (для того, чтобы кнопка была внизу. (Попробуйте убрать эту строку, и посмотреть, что будет)-->
+        <button type="submit">Нажми на меня</button>
+    </form>
+    <br>
+    <!-- Пример ввода кода с <input type="radio"> -->
+    <form action="something">
+        <label for="first">
+            <form><input type="radio" name="samename">First_variant</form>
+        </label>
+
+        <label for="second">
+            <input type="radio" name="samename">Second_variant
+        </label>
+    </form>
+    <br>
+    <!-- Ну, тут я уже использовал Emmet ( формула: form>label*3>input )-->
+    <form action="/submit something">
+        <label for="Love"><input type="checkbox" name="personality">Love</label>
+        <label for="Live"><input type="checkbox" name="personality">Live</label>
+        <label for="Work"><input type="checkbox" name="personality">Work</label>
+    </form>
+</body>
+
+</html>
