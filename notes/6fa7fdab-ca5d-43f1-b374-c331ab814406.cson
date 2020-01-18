@@ -1,14 +1,14 @@
 createdAt: "2020-01-18T17:24:16.297Z"
-updatedAt: "2020-01-18T18:11:13.460Z"
+updatedAt: "2020-01-18T21:20:55.019Z"
 type: "MARKDOWN_NOTE"
 folder: "32a2e213603400f3850a"
-title: "1. Базовые теги"
+title: "1. Базовые теги HTML"
 tags: [
   "html"
   "web"
 ]
 content: '''
-  # 1. Базовые теги
+  # 1. Базовые теги HTML
   
   Каждый файл с расширением .html должен иметь начало
   
