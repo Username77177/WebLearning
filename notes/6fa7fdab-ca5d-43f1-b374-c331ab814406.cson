@@ -1,5 +1,5 @@
 createdAt: "2020-01-18T17:24:16.297Z"
-updatedAt: "2020-01-18T18:03:02.211Z"
+updatedAt: "2020-01-18T18:11:13.460Z"
 type: "MARKDOWN_NOTE"
 folder: "32a2e213603400f3850a"
 title: "1. Базовые теги"
@@ -25,7 +25,7 @@ content: '''
       <p>Hello World!</p>
       <a href="https://google.com">Search something in Google</a>
       <!-- Комментарий -->
-      <img source="../htmlsource/img/1.jpg" alt="Boostnote Screenshot">
+      <img src="../htmlsource/img/1.jpg" alt="Boostnote Screenshot">
   </body>
   </html>
   ```
@@ -63,7 +63,7 @@ content: '''
   ## Атрибуты
   Как уже было замечено, рядом с тегами могут стоять атрибуты. Атрибуты указывают на особенности тегов.
   
-  Например: атрибут `href="something"` указывает на что должна ссылаться ссылка; `source="picture.png"` - указывает путь к картинке, которую нужно отобразить
+  Например: атрибут `href="something"` указывает на что должна ссылаться ссылка; `src="picture.png"` - указывает путь к картинке, которую нужно отобразить
 '''
 linesHighlighted: []
 isStarred: false
