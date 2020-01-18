@@ -18,7 +18,7 @@
 * Live Server *(Сервер для написания страницы и просмотра результата в реальном времени)*
 * jshint *(Отладчик для JS в реальном времени)*
 
-###Дополнительные утилиты:
+### Дополнительные утилиты:
 
 * [Neovim](https://github.com/neovim/neovim)
 * [Firefox Developer Edition](https://www.mozilla.org/en-US/firefox/developer/)
