@@ -1,5 +1,5 @@
 createdAt: "2020-01-18T19:09:18.169Z"
-updatedAt: "2020-01-18T20:55:04.105Z"
+updatedAt: "2020-01-18T21:10:37.357Z"
 type: "MARKDOWN_NOTE"
 folder: "32a2e213603400f3850a"
 title: "4. Ввод"
@@ -189,7 +189,7 @@ content: '''
   
   `ec`
   
-  
+  [Код этого урока](https://github.com/Username77177/WebLearning/blob/master/htmlsource/4.Input.html)
 '''
 linesHighlighted: []
 isStarred: false
