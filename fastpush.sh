@@ -11,6 +11,6 @@ if [[ $yon = "1" ]]
 then
 	echo "Maybe some comment? (Not necessarily)"
 	read comment
-	git commit -m "$dt \| $comment"
+	git commit -m "$dt | $comment"
 fi
 
