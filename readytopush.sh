@@ -11,6 +11,11 @@ if [[ $yon = "1" ]]
 then
 	echo "Maybe some comment? (Not necessarily)"
 	read comment
+	if [[ $comment = "" ]]
+	then
+		git commit -m "$dt"
+	else
 	git commit -m "$dt | $comment"
+	fi
 fi
 
