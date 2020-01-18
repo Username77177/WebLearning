@@ -1,15 +1,24 @@
 createdAt: "2020-01-18T09:53:56.523Z"
-updatedAt: "2020-01-18T09:54:25.022Z"
+updatedAt: "2020-01-18T11:29:36.505Z"
 type: "MARKDOWN_NOTE"
 folder: "32a2e213603400f3850a"
-title: "Изучение HTML"
+title: "Изучение HTML, CSS, JS"
 tags: [
   "css"
   "html"
   "js"
   "web"
 ]
-content: "# Изучение HTML"
+content: '''
+  # Изучение HTML, CSS, JS
+  
+  ### Чеклист
+  
+  * [ ] Изучить инструменты для работы в Web
+  * [ ] Изучить базовые теги HTML
+  * [ ] Изучить базовые свойства CSS
+  * [ ] Начать учить JS
+'''
 linesHighlighted: []
 isStarred: false
 isTrashed: false
