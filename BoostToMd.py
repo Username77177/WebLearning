@@ -28,9 +28,10 @@ for thisfile in files_cson:
         content+=this_cson_strings[elementindex]
         content+= "\n"
     strlist.close()
-    print("Title: "+title)
+    print("Title: "+title.strip('"'))
     print("Content:")
     print(content)
 
-    newfile = open("notes_md/"+title+".md", "w")
+    newfile = open("notes_md/"+title.strip('"')+".md", "w")
     newfile.write(content)
+    newfile.close()
