@@ -1,16 +1,43 @@
-.senior
-{
+.senior {
     color: goldenrod;
-    font-size: larger; /* Размер текста */
-    background-color: antiquewhite; /* Цвет фона */
-    font-family: 'Courier New', Courier, monospace; /* Семейство шрифта (просто указывать нужный шрифт) */
+    font-size: larger;
+    /* Размер текста */
+    background-color: antiquewhite;
+    /* Цвет фона */
+    font-family: 'Courier New', Courier, monospace;
+    /* Семейство шрифта (просто указывать нужный шрифт) */
     /* Первый будет использован сразу, но если он не будет найден на устройстве пользователя, то будет использован второй
     Если с ним произойдет та же ситуация, то будет использован стандартный monospace */
 }
+
+
 /* Продолжим назначать свойства другому элементу (хотя могли продолжить и на этом, просто на нём плохо видно) */
 
-p
+p {
+    font-family: "Fira Code", "Source Code Pro", Georgia, 'Times New Roman', Times, serif;
+    /* Шрифты */
+}
+
+#eleven
+/* Элемент с таким идентификатором будет отформатирован в виде, который описан ниже */
+
 {
-    font-family: "Fira Code", "Source Code Pro", Georgia, 'Times New Roman', Times, serif; /* Шрифты */
-    
+    font-family: Alata, monospace;
+    font-size: 16px;
+}
+
+.newimages {
+    width: 771px;
+    /* Ширина картинки (высота будет подстраиваться) */
+}
+
+.borderforimages {
+    border: 5px solid brown;
+    /* Ширина_линии, стиль, цвет */
+    border-radius: 1px;
+    /* Указывает насколько скруглены углы */
+}
+
+.background_gray {
+    background-color: rgb(235, 235, 237);
 }

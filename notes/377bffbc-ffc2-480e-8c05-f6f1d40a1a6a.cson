@@ -1,5 +1,5 @@
 createdAt: "2020-01-19T06:51:14.060Z"
-updatedAt: "2020-01-19T07:43:26.754Z"
+updatedAt: "2020-01-19T09:01:07.006Z"
 type: "MARKDOWN_NOTE"
 folder: "32a2e213603400f3850a"
 title: "6. Основные атрибуты CSS"
@@ -44,7 +44,7 @@ content: '''
   Далее будет приведён код только в файле с расширением .css
   
   ```css
-  .senior
+  .senior /* Все теги с классом senior будут иметь следующие свойства */
   {
       color: goldenrod;
       font-size: larger; /* Размер текста */
@@ -61,8 +61,52 @@ content: '''
   }
   ```
   
-  ![То, что вывелось у меня в браузере](htmlsource/img/1.png)
+  ## Google Fonts
+  Зачастую обычных шрифтов не хватает, поэтому можно импортировать шрифты из **Google Fonts**. **Google Fonts** - сайт, где находятся шрифты, которые можно свободно использовать. Достаточно просто выбрать нужные шрифты, и открыть окно внизу сайта. Сайт сам предложит вам код импорта в HTML. Вам нужно только вставить код в файл HTML в секцию `<head></head>` 
   
+  Пример такого кода:
+  
+  ```html
+  <link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet"> 
+  <!--Импортирует шрифт Alata -->
+  ```
+  
+  Пример кода с использованием шрифтов в **CSS**:
+  
+  ```html
+  <!--HTML-->
+  <link href="https://fonts.googleapis.com/css?family=Alata|Fira+Code&display=swap" rel="stylesheet"> 
+  <!-- Fira Code and Alata -->
+  ```
+  
+  ```css
+  /*CSS*/
+  p {
+      font-family: "Fira Code", "Source Code Pro", Georgia, Alata, 'Times New Roman', Times, serif;
+      /* Шрифты */
+  }
+  ```
+  
+  ## Рамки в CSS3
+  
+  Давайте обведём нашу фотографию (в коде).
+  
+  Для этого используем свойство элемента `border`
+  
+  ```css
+  	.thick-border-brown {
+      border-width:10px;
+      border-style: solid;
+      border-color: brown;
+    }
+    /* Или одним свойством */
+    .another-thick-border
+    {
+      border: 10px solid brown;
+      border-radius: 1px;
+      /* Указывает насколько скруглены углы */
+    }
+  ```
 '''
 linesHighlighted: []
 isStarred: false

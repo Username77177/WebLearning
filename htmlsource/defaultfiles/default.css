@@ -1,0 +1,17 @@
+/* Этот стиль будет подгружаться автоматически для того, чтобы не прописывать всё время одно и то же */
+
+
+/* Советую просто просмотреть его 1 раз, а затем идти в стиль, который прогружается после этого */
+
+.default-text {
+    font-family: "Fira Code", "Inconsolata", "Ubuntu", "Times New York", monospace;
+    margin: 2%;
+}
+
+h1 {
+    font-family: "Inconsolata", "Ubuntu", "Times New York", monospace;
+}
+
+.default-image {
+    width: 750px;
+}
