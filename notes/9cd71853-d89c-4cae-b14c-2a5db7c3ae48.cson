@@ -1,5 +1,5 @@
 createdAt: "2020-01-18T21:19:41.074Z"
-updatedAt: "2020-01-19T06:44:50.387Z"
+updatedAt: "2020-01-19T06:50:43.943Z"
 type: "MARKDOWN_NOTE"
 folder: "32a2e213603400f3850a"
 title: "5. CSS: Начало"
@@ -77,6 +77,8 @@ content: '''
   
   Какие есть атрибуты у **CSS** мы изучим позже.
   
+  [Исходник этого урока](https://github.com/Username77177/WebLearning/blob/master/htmlsource/5.%20FirstCSS.html)
+  
   ## Логическая разметка HTML5
   
   Пока мы не приступили изучать CSS3 в полную силу, мы должны немного поговорить о тегах HTML5, которые не несут в себе зрительной информации, однако являются важными для поисковиков, таргетеров.
@@ -94,8 +96,8 @@ content: '''
   * `<aside></aside>` - указывает на второстепенную информацию на сайте
 '''
 linesHighlighted: [
-  74
-  81
+  76
+  83
 ]
 isStarred: false
 isTrashed: false
