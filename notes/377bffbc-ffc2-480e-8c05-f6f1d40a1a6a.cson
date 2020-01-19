@@ -1,9 +1,13 @@
 createdAt: "2020-01-19T06:51:14.060Z"
-updatedAt: "2020-01-19T07:12:47.171Z"
+updatedAt: "2020-01-19T07:43:26.754Z"
 type: "MARKDOWN_NOTE"
 folder: "32a2e213603400f3850a"
 title: "6. Основные атрибуты CSS"
-tags: []
+tags: [
+  "css"
+  "html"
+  "web"
+]
 content: '''
   # 6. Основные атрибуты CSS
   
@@ -37,44 +41,28 @@ content: '''
   
   [Ссылка на файл CSS этого урока](https://github.com/Username77177/WebLearning/blob/master/htmlsource/css/css_attr.css)
    
-  ```html
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>Атрибуты CSS</title>
-      <style>
-      .senior /*Комментарии тут пишутся вот так*/
-      { /*`.класс` `#идентификатор`, как и раньше*/
-        color: red; /* Меняет цвет текста */
-      }
-      </style>
-    </head>
-    <body>
-      <p class="senior">Какой-то текст</p>
-    </body>
-  </html>
+  Далее будет приведён код только в файле с расширением .css
+  
+  ```css
+  .senior
+  {
+      color: goldenrod;
+      font-size: larger; /* Размер текста */
+      background-color: antiquewhite; /* Цвет фона */
+      font-family: 'Courier New', Courier, monospace; /* Семейство шрифта (просто указывать нужный шрифт) */
+      /* Первый будет использован сразу, но если он не будет найден на устройстве пользователя, то будет использован второй
+      Если с ним произойдет та же ситуация, то будет использован стандартный monospace */
+  }
+  /* Продолжим назначать свойства другому элементу (хотя могли продолжить и на этом, просто на нём плохо видно) */
+  
+  p
+  {
+      font-family: "Fira Code", "Source Code Pro", Georgia, 'Times New Roman', Times, serif;
+  }
   ```
   
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>Атрибуты CSS</title>
-      <style>
-      .senior /*Комментарии тут пишутся вот так*/
-      { /*`.класс` `#идентификатор`, как и раньше*/
-        color: red; /* Меняет цвет текста */
-      }
-      </style>
-    </head>
-    <body>
-      <p class="senior">Какой-то текст</p>
-    </body>
-  </html>
+  ![То, что вывелось у меня в браузере](htmlsource/img/1.png)
+  
 '''
 linesHighlighted: []
 isStarred: false
