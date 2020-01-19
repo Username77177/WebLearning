@@ -8,10 +8,22 @@
     <title>Наследование</title>
     <link rel="import" href="defaultfiles/default.html">
     <link rel="stylesheet" href="defaultfiles/default.css">
+    <link rel="stylesheet" href="css/inherit.css">
 </head>
 
 <body>
-    <h1 style="text-align: left;">Поговорим о наследовании</h1>
+    <h1 style="text-align: left;">Наследование цвета шрифта от элемента body</h1>
+    <h2 class="headers_with_black_font">Новый заголовок (c новым классом, который наследует то, чего нет в классе)</h2>
+    <div class="default-text">
+        <p>Ещё одна строка текста</p>
+        <p>Которая уже написана стандартной библиотекой (которая вложена в папку <em>defaultfiles</em>)</p>
+        <p id="bad_color">Все решили что цвет текста плохой, и поменяли его с помощью идентификатора</p>
+    </div>
+    <div id="fblock" class="bad_block">
+        <h2>Новый блок</h2>
+        <p>В этом блоке что-то написано</p>
+        <p>И чёрт побери, хорошо написано</p>
+    </div>
 </body>
 
 </html>

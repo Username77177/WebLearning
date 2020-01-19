@@ -1,0 +1,35 @@
+:root {
+    /* Допустим мы заранее знаем, что шрифт у этой библиотеки не очень хороший */
+    /* Мы применяем переменную там, где это требуется */
+    /* Объявляем переменную в псевдо-классе :root */
+    --font-color: rgb(31, 31, 31);
+    /* Используем систему цветом RGB */
+}
+
+body {
+    background-color: rgb(225, 225, 221);
+    color: rgb(177, 90, 90);
+}
+
+h1,
+h2 {}
+
+.headers_with_black_font {
+    color: rgb(20, 20, 20)
+}
+
+#bad_color {
+    color: forestgreen;
+}
+
+.bad_block {
+    color: beige;
+    background-color: rgb(155, 209, 191);
+    margin: 10px 0 10px 10px;
+}
+
+#fblock {
+    padding: 5px 0px 5px 10px;
+    color: var(--font-color, black);
+    /* Цвет элементов в данном идентификаторе задан переменной, однако, если переменная не задана, то цвет откатывается на чёрный */
+}
