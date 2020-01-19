@@ -3,13 +3,23 @@
 
 /* Советую просто просмотреть его 1 раз, а затем идти в стиль, который прогружается после этого */
 
-.default-text {
+.default-text-margin {
     font-family: "Fira Code", "Inconsolata", "Ubuntu", "Times New York", monospace;
     margin: 2%;
 }
 
-h1 {
+.default-text {
+    font-family: "Fira Code", "Inconsolata", "Ubuntu", "Times New York", monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: "Inconsolata", "Ubuntu", "Times New York", monospace;
+    text-align: center;
+    margin: 15px
 }
 
 .default-image {

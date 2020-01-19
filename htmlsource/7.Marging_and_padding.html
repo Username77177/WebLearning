@@ -9,12 +9,44 @@
     <!-- defaultfiles/default.* -->
     <link rel="import" href="defaultfiles/default.html">
     <link rel="stylesheet" href="defaultfiles/default.css">
+    <link rel="stylesheet" href="css/boxes_in-css.css">
 </head>
 
 <body>
-    <div class="default-text">
+    <div class="default-text-margin">
         <h1>Отступы</h1>
     </div>
+    <p class="inject-text default-text">margin</p>
+    <div class="box orange-box">
+        <p class="box red-box default-text">padding</p>
+        <p class="box blue-box default-text">padding</p>
+    </div>
+    <h2>Тест</h2>
+    <div class="box">
+        <p style="border: 5px solid gray;">Обычная коробка</p>
+    </div>
+    <div class="default-text-margin">
+        <p>Представим что внешняя коробка - <strong>границы страницы</strong></p>
+        <p>Серая коробка - элемент <em>p</em> с классом <em>text</em></p>
+        <p>В данном случае стоит рассматривать расстояние от границы серой коробки до границы черной коробки</p>
+    </div>
+    <h4>Действие margin</h4>
+    <div class="box">
+        <p class="text">Hello, my name is Username77177</p>
+        <p class="text">Отступы снаружи: <strong>t: 20px; b: 20px; l:10px; r:10px</strong></p>
+    </div>
+    <div class="default-text-margin">
+        <p>Представим что внешняя коробка все ещё <strong>границы страницы</strong></p>
+        <p>Свойство padding - отступать от границы <strong>внутри</strong></p>
+        <p>В данном случае стоит рассматривать расстояние от текста до серой границы, так как это <strong>внутреннее расстрояние</strong></p>
+    </div>
+    <h4>Действие padding</h4>
+
+    <div class="box">
+        <p class="text-padding">Hello, my name is Username77177</p>
+        <p class="text-padding">Отступы внутри: <strong>t: 30px; b: 30px; l:20px; r:20px</strong></p>
+    </div>
+
 </body>
 
 </html>

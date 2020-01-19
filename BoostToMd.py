@@ -5,7 +5,7 @@ files_cson = os.listdir("./notes/")
 for thisfile in files_cson:
     content = ""  # For content element in array
     title = ""  # For title element in array
-    strlist = open("notes/" + thisfile, mode="r") #encoding="UTF8")
+    strlist = open("notes/" + thisfile, mode="r", errors='ignore') #encoding="UTF8")
     this_cson_strings = strlist.readlines()  # Read all strings in array
 
     for fastremove in this_cson_strings: # Remove "\n"

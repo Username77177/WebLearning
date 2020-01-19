@@ -1,0 +1,41 @@
+createdAt: "2020-01-19T11:36:49.291Z"
+updatedAt: "2020-01-19T11:57:07.882Z"
+type: "MARKDOWN_NOTE"
+folder: "32a2e213603400f3850a"
+title: "8. Базовые свойства CSS (больше)"
+tags: [
+  "css"
+  "web"
+]
+content: '''
+  # 8. Базовые свойства CSS (больше)
+  
+  ```css
+  body
+  {
+    background-color: gray;
+  }
+  ```
+  
+  Если мы применим свойство к тегу `<body></body>`, то оно применится **к всему тегу**. Тут мы плавно подошли к **наследованию**.
+  
+  ## Наследование
+  
+  Если мы разместим элемент `<h1></h1>` в теге `<body></body>`, то если у `<h1></h1>` нет никаких своих свойств, он унаследует свойства `<body></body>`
+  
+  ```html
+  <html>
+    <head>
+      <style>
+        
+      </style>
+    </head>
+    <body>
+      <h1>Inherit!</h1>
+    </body>
+  </html>
+  ```
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false
