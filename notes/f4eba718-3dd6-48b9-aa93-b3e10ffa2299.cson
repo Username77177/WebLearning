@@ -1,0 +1,47 @@
+createdAt: "2020-01-22T20:01:31.163Z"
+updatedAt: "2020-01-22T20:45:15.135Z"
+type: "MARKDOWN_NOTE"
+folder: "32a2e213603400f3850a"
+title: "11. Анимация в CSS"
+tags: [
+  "css"
+  "html"
+  "web"
+]
+content: '''
+  # 11. Анимация в CSS
+  
+  ```html
+  <style>
+    button {
+      border-radius: 5px;
+      color: white;
+      background-color: #0F5897;
+      padding: 5px 10px 8px 10px;
+  }
+  
+  button:hover {
+      animation-name: background-color;
+      /* Имя анимации */
+      animation-duration: 500ms;
+      /* Длина анимации */
+      animation-fill-mode: forwards;
+      /* Анимация остановится на 100% */
+  }
+  
+  @keyframes background-color {
+      /* Сам процесс анимации */
+      100% {
+          /* К 100 процентам выполнятся следующие свойства: */
+          background-color: #4791d0;
+      }
+  }
+  
+  </style>
+  
+  <button>Register</button>
+  ```
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false

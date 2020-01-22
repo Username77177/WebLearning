@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="defaultfiles/default.css">
+    <title>Применение дизайна</title>
+    <style>
+        /* text-align */
+        
+        .newbox {
+            border-style: solid;
+            border-color: #141414;
+            border-width: 1px;
+            margin: 15px 25%;
+            padding: 10px;
+        }
+        
+        #middle_text {
+            text-align: center;
+            margin: 0px;
+        }
+        
+        #right_text {
+            text-align: right;
+            margin: 0px;
+        }
+        
+        #left_text {
+            text-align: left;
+            margin: 0px;
+        }
+        /* width, height */
+        
+        #wh {
+            width: 175px;
+            height: 30px;
+        }
+        
+        .zeromarginandpadding {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        #box-style-shadow {
+            box-shadow: black 0px 10px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>text-align</h2>
+    <div class="newbox" id="box-style-shadow">
+        <p id="middle_text">Some text in the middle</p>
+        <p id="right_text">Some text in the right corner</p>
+        <p id="left_text">Some text in the left corner</p>
+    </div>
+    <hr/>
+    <h2>width и height</h2>
+    <p class="zeromarginandpadding" id="wh">Lorem Ipsum <strong>Просмотри меня в отладчике</strong></p>
+    <p style="margin-top:30px;">Текст немного выходит за рамки, не так-ли?</p>
+    <p>А теперь посмотри, где начинаются и заканчиваются рамки 2 предыдущих элементов и сверься с кодом</p>
+    <hr/>
+</body>
+
+</html>

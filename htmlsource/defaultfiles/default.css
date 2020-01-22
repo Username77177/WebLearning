@@ -18,8 +18,9 @@ h3,
 h4,
 h5 {
     font-family: "Inconsolata", "Ubuntu", "Times New York", monospace;
-    text-align: center;
-    margin: 15px
+    text-align: auto;
+    margin: 20px;
+    text-transform: uppercase;
 }
 
 .default-image {

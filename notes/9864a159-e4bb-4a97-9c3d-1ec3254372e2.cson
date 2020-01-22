@@ -1,15 +1,287 @@
 createdAt: "2020-01-19T17:53:48.043Z"
-updatedAt: "2020-01-19T17:55:09.283Z"
+updatedAt: "2020-01-22T20:45:02.417Z"
 type: "MARKDOWN_NOTE"
 folder: "32a2e213603400f3850a"
-title: "9.Применение знаний разметки"
-tags: []
+title: "9. Применение знаний разметки"
+tags: [
+  "css"
+  "web"
+]
 content: '''
-  # 9.Применение знаний разметки
+  # 9. Применение знаний разметки
   
   [Этот раздел также можно найти на FreeCodeCamp](https://www.freecodecamp.org/learn/responsive-web-design/applied-visual-design/create-visual-balance-using-the-text-align-property)
   
+  ## О чём?
   
+  В этом разделе будут в основном практические применения знаний CSS3 и HTML5
+  
+  ## Отладчик
+  Сейчас не менее важно научиться пользоваться отладчиком, так как он поможет избежать многих ошибок и непонятных ситуаций, а также поможет находу изменять значения и ориентироваться в коде.
+  
+  **Firefox** - мой браузер для постоянного пользования, именно поэтому я буду пользоваться его отладчиком. Отладчик вызывается комбинацией клавиш `Ctrl+Shift+C`
+  
+  Он будет автоматически находить фрагмент кода который вам нужен, нужно просто навести мышь на элемент
+  
+  # Изучение новых тегов / свойств
+  
+  ## CSS свойства
+  
+  ### `text-align`
+  Свойство `text-align` позволяет управлять текстом в CSS3.
+  
+  Значения `text-align`:
+  
+  * `center` - текст по центру
+  * `left` или `right` - текст справа или слева
+  * `justify` - растянуть текст по ширине
+  
+  Пример применения:
+  
+  [Ссылка на файл](https://github.com/Username77177/WebLearning/blob/master/htmlsource/9.AppliedDesign.html)
+  
+  ```html
+  <!DOCTYPE html>
+  <html lang="en">
+  
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <meta http-equiv="X-UA-Compatible" content="ie=edge">
+          <title>Применение дизайна</title>
+          <style>
+              .newbox {
+                  border-style: solid;
+                  border-color: #141414;
+                  border-width: 1px;
+                  margin: 15px 25%;
+                  padding: 10px;
+              }
+              
+              #middle_text {
+                  text-align: center;
+                  margin: 0px;
+              }
+              
+              #right_text {
+                  text-align: right;
+                  margin: 0px;
+              }
+              
+              #left_text {
+                  text-align: left;
+                  margin: 0px;
+              }
+          </style>
+      </head>
+  
+      <body>
+          <div class="newbox">
+              <p id="middle_text">Some text in the middle</p>
+              <p id="right_text">Some text in the right corner</p>
+              <p id="left_text">Some text in the left corner</p>
+          </div>
+      </body>
+  
+  </html>
+  ```
+  
+  ### `width` и `height`
+  `width` - ширина
+  
+  `height` - высота
+  
+  Если изменить ширину, то показатель высоты будет подстраиваться под неё.
+  
+  `width` и `height` нужны когда нужно изменить высоту и ширину самого элемента, а не его рамки и отступы
+  
+  ```html
+  <!DOCTYPE html>
+  <html lang="en">
+  
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <meta http-equiv="X-UA-Compatible" content="ie=edge">
+          <title>Применение дизайна</title>
+          <style>
+          #picture1
+          {
+            width: 500px;
+            height: 250px;
+          }
+          </style>
+      </head>
+  
+      <body>
+          <img src="img/anyimage.jpg" alt="some random picture" id="picture1">
+      </body>
+  
+  </html>
+  ```
+  
+  ## `box-shadow`
+  
+  Следует сразу понять как в **HTML** устроены оси *x,y*
+  
+  Если *x* идёт слева направо, то *y* **сверху вниз**
+  
+  `box-shadow` - создаёт тень элемента и принимает 4 значения 
+  
+  Синтаксис: `box-shadow: сдвиг_по_x | сдвиг_по_y | радиус | цвет`
+  
+  ```css
+  box-shadow: 0 10px 20px rgba(0,0,0,0.20)
+  /* Используем rgba, для того, чтобы тень была прозрачной */
+  ```
+  
+  ```css
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2), 0 6px 6px rgba(0,0,0,0.23);
+  /* Двойная тень */
+  ```
+   ## `Opacity`
+   `opacity` - прозрачность чего-либо
+   0 - прозрачное
+   1 - не прозрачное
+  
+  Значения: от 0 до 1 (включая рациональные)
+  
+  ```css
+    <img src="https://images.pexels.com/photos/3278364/pexels-photo-3278364.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Man with newspaper" style="border: 3px solid #0e0e0e; opacity: 0.75;">
+  ```
+  
+  
+  ## Функция `linear-gradient`
+  Создает линейный градиент
+  
+  >В функциях аргументы разделяются запятой
+  
+  Синтакс: `linear-gradient(градусы[по часовой с 12], цвет_1, цвет_2, цвет_3, и далее)`
+  
+  Пример:
+  
+  ```css
+  background: linear-gradient(0deg, blue, pink)
+  ```
+  
+  ## Функция `repeating-linear-gradient`
+  Функция `repeating-linear-gradient()` похожа на функцию `linear-gradient` с отличием в том, что она повторяет указанный шаблон градиента. `repeating-linear-gradient()` принимает различные значения.
+  
+  >**Внимание, самого символа `|` в синтаксисе нет, однако, тут он используется для того чтобы наглядно разделить аргументы функции**
+  
+  Синтакс: `направление[градусы] | цвет_1 | количество_пикселей_на_цвет1 | цвет_2 | количество_пикселей_на_цвет2`
+  
+  или
+  
+  `направление[градусы], цвет_1 количество_пикселей_на_цвет1, цвет_2 количество_пикселей_на_цвет2, и далее`
+  
+  Угол является направлением градиента; ширина, которая обозначает место перехода и задается в процентах или количестве пикселей. (px)
+  
+  ```css
+  background: repeating-linear-gradient(35 deg, yellow 0px, black 40px);
+  ```
+  
+  ## `background + url()`
+  
+  Чтобы установить какую-то картинку как фон, можно использовать функцию `url()` в сочетании с свойством `background`
+  
+  ```css
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cg fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath d='M12 0h18v6h6v6h6v18h-6v6h-6v6H12v-6H6v-6H0V12h6V6h6V0zm12 6h-6v6h-6v6H6v6h6v6h6v6h6v-6h6v-6h6v-6h-6v-6h-6V6zm-6 12h6v6h-6v-6zm24 24h6v6h-6v-6z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+  
+  ```
+  
+  ## Фукции `scale()`, `skewX()`, `skewY()`, `rotate()` и свойство `transform`
+  
+  Чтобы изменить размер элемента, в CSS есть свойство `transform` вместе со своей функцией `scale()`.
+  
+  ```css
+  #ball {
+      transform: scale(25);
+      /* Увеличивает размер элемента в 25 раз */
+  ```
+  
+  Также существует функция `skewX()`, которая искажает изображение на определённое количество градусов (*по оси X*)
+  
+  Функция `skewY()` ведёт себя аналогично, с учётом того, что искажает по оси Y
+  
+  `rotate()` - просто поворачивает элемент
+  
+  `rotate(-50deg)`
+  
+  ```css
+  #ball1 {
+      transform: scale(25);
+      transform: skewX(-25deg);
+      /* Увеличивает размер элемента в 25 раз */
+      /* Искажает (сжимает) элемент ball1 на 25 градусов влево */
+  ```
+  
+  ## `:hover` - псевдо-элемент наведения
+  
+  Если мы изменяем селектор с псевдо-элементом `:hover` (например: `a:hover` - как будет подсвечиваться якорь при наведении), то мы задаем вид элементу, когда на него наводят мышь (либо тапают)
+  
+  `p:hover` - как ведёт себя `p` при наведении мыши
+  
+  ```css
+  div {
+  background: linear-gradient(45deg, orange, white);
+  width: 700px;
+  height: 250px;
+  border-radius: 20px;
+  }
+  
+  div:hover {
+  transform: scale(1.2);
+  }
+  
+  /* При наведении мыши блок div будет увеличиваться */
+  ```
+  
+  ## Псевдо-элементы `::before` и `::after`
+  Эти псевдоэлементы используются для добавления чего-либо до или после выбранного элемента.
+  
+  Для работы этих Псевдо-элементов в оригинальном селекторе должно быть свойство `content=""`
+  
+  ```css
+   .heart {
+      position: absolute;
+      margin: auto;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: red;
+      height: 50px;
+      width: 50px;
+      transform: rotate(-45deg);
+    }
+    .heart::after {
+      background-color: red;
+      content: "";
+      border-radius: 50%;
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      top: 0px;
+      left: 25px;
+    }
+    .heart::before {
+      content: "";
+      background-color: red;
+      border-radius: 50%;
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      top: -25px;
+      left: 0px;
+    }
+  /* Рисует сердце */
+  ```
+  
+  
+  ##### Заметка: `background-color` может иметь значение `transparent` - невидимый
+  
+  ## HTML теги
 '''
 linesHighlighted: []
 isStarred: false
