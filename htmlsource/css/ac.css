@@ -1,0 +1,71 @@
+body {
+    background-color: rgb(247, 247, 247);
+    color: #141414;
+    /* padding: 0; */
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 750;
+    font-family: Merriweather, sans-serif;
+    color: rgb(37, 37, 37);
+    font-size: 35px;
+}
+
+p.default {
+    font-family: Montserrat, "Fira Code";
+    padding-left: 25px;
+    margin-right: 55%;
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 0px;
+}
+
+h2.default {
+    font-family: Merriweather, monospace;
+    font-size: 27px;
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
+
+h2>span {
+    font-size: 27px;
+    background-color: rgb(235, 235, 235);
+    /* Будут изменены элементы с тегом <span></span>, которые находятся в <h2></h2> */
+}
+
+#not-visible-picture {
+    position: absolute;
+    top: 200px;
+    right: 400px;
+}
+
+[alt]#not-visible-picture {
+    font-family: "Fira Code", sans-serif;
+    /* Устанавливает шрифт у атрибута alt с идентификатором not-visible-picture */
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #141414;
+    height: 30px;
+    width: 100%;
+    margin: 0;
+    color: rgb(202, 202, 202);
+    font-family: "Fira Code", "Open Sans", sans-serif;
+}
+
+#made-by {
+    position: absolute;
+    right: 90px;
+    bottom: 5px;
+}
+
+#year {
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    color: rgb(200, 200, 200);
+}

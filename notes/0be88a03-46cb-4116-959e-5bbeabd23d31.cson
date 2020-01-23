@@ -1,0 +1,88 @@
+createdAt: "2020-01-23T06:15:17.130Z"
+updatedAt: "2020-01-23T19:12:33.973Z"
+type: "MARKDOWN_NOTE"
+folder: "32a2e213603400f3850a"
+title: "12. Правила доступности"
+tags: [
+  "access"
+  "accessibility"
+  "html"
+  "web"
+]
+content: '''
+  # 12. Правила доступности
+  
+  [Эта глава на FreeCodeCamp](https://www.freecodecamp.org/learn/responsive-web-design/applied-accessibility/add-a-text-alternative-to-images-for-visually-impaired-accessibility)
+  
+  Эта глава рассказывает о правилах разметки, а также что делать, если элемент неправильно отображается
+  
+  ## Атрибут `alt` в теге `img`
+  
+  Когда картинка не выводится на экран, мы используем атрибут `alt="значение_картинки"`. C этим атрибутом выведется название картинки (значение `alt`), вместо неё (*если картинки браузер не найдёт*)
+  
+  ## Теги `h1`,`h2`,`h3`,`h4`,`h5`,`h6`
+  Данные теги должны быть расположены строго по контексту информации хранящейся в них 
+  
+  ```html
+  <h1>Самое главное (тема)</h1>
+  
+  <h2>Главное (подтема)</h2>
+  
+  <h3>Чуть менее главное (пункт)</h3>
+  
+  <p>И так далее (просто текст)</p>
+  ```
+  
+  ## Тег `main`, `header`, `footer`, `section`, `article`
+  Эти теги никак визуально не отличаются от того же `div`, однако имеют семантическую нагрузку
+  
+  Тег `main` создан для того чтобы помещать в него главную информацию, что содержится на странице
+  
+  Тег `header` - тег с шапкой сайта
+  
+  Тег `footer` - тег с подвалом сайта
+  
+  Тег `section` - разделяет сайт на секции
+  
+  Тег `article` - тег статьи, который может быть применён к главной статье сайта
+  
+  ```html
+  <!DOCTYPE html>
+  <html lang="en">
+  
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="css/ac.css">
+      <link href="https://fonts.googleapis.com/css?family=Fira+Code|Merriweather|Montserrat&display=swap" rel="stylesheet">
+      <title>Применение правил доступности</title>
+  </head>
+  
+  <body>
+      <header>
+          <h1>Правила доступности</h1>
+      </header>
+      <main>
+          <h2 class="default">Про <span>img</span> и <span>alt</span></h2>
+          <p class="default">Иногда отобразить какой-то элемент не удаётся. Причин может быть много. От "Вне доступа" до сбоя в коде браузера. Чтобы хоть как-то дать пользователю понять, что тут (<em>например</em>) находилась бы картинка нужно использовать тег <code>alt</code>.
+          </p>
+          <img src="#" alt="Какая-то картинка" id="not-visible-picture">
+          <p class="default">В данной странице присутствует картинка, которая специально не грузится (стоит заглушка
+              <code>#</code>) тем не менее на ёё месте мы видим специальный текст, который указывает нам что должно было содержаться в той картинке </p>
+          <h2 class="default">Про <span>h1</span>, <span>h2</span>, <span>h3</span>, <span>h4</span> , <span>h5</span>, <span>h6</span></h2>
+          <p class="default">Также все header'ы (<code>h1, h2, h3 и далее</code>) должны быть сематически верно распределены
+          </p>
+      </main>
+      <footer>
+          <div id="made-by">Made by Username77177</div>
+          <div id="year"> | 2020 ©</div>
+      </footer>
+  </body>
+  
+  </html>
+  ```
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false

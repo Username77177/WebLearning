@@ -1,5 +1,5 @@
 createdAt: "2020-01-19T09:08:06.497Z"
-updatedAt: "2020-01-19T18:07:18.388Z"
+updatedAt: "2020-01-23T19:20:43.961Z"
 type: "MARKDOWN_NOTE"
 folder: "32a2e213603400f3850a"
 title: "7. Отступы"
@@ -60,6 +60,8 @@ content: '''
   [Ссылка на файл CSS этого урока](https://github.com/Username77177/WebLearning/blob/master/htmlsource/css/boxes_in-css.css)
   
   [Ссылка на файл HTML этого урока](https://github.com/Username77177/WebLearning/blob/master/htmlsource/7.Marging_and_padding.html)
+  
+  [Ссылка на HTML ещё одного урока по этой теме](https://github.com/Username77177/WebLearning/blob/master/htmlsource/7.1.Boxes_padding_margin.html)
   
   В HTML полностью описана работа `margin` и `padding`. Советую поиграть со значениями, так осознание приходит чуть побыстрее.
 '''
