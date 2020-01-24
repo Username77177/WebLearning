@@ -1,0 +1,20 @@
+createdAt: "2020-01-24T19:42:17.770Z"
+updatedAt: "2020-01-24T19:55:45.879Z"
+type: "MARKDOWN_NOTE"
+folder: "b19cd2002423278a9a7d"
+title: "Про заметки"
+tags: [
+  "css"
+  "firstproject"
+  "html"
+  "web"
+]
+content: '''
+  # Про заметки
+  Да, тут тоже будут заметки. Однако связаны они будут только с проектом процесс выполнения проекта и так далее.
+  
+  # Процесс создания сайта
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false

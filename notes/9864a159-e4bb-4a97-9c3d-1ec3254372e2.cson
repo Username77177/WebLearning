@@ -1,5 +1,5 @@
 createdAt: "2020-01-19T17:53:48.043Z"
-updatedAt: "2020-01-23T06:20:01.071Z"
+updatedAt: "2020-01-23T19:25:19.884Z"
 type: "MARKDOWN_NOTE"
 folder: "32a2e213603400f3850a"
 title: "9. Применение знаний разметки"
@@ -241,7 +241,7 @@ content: '''
   ## Псевдо-элементы `::before` и `::after`
   Эти псевдоэлементы используются для добавления чего-либо до или после выбранного элемента.
   
-  Для работы этих Псевдо-элементов в оригинальном селекторе должно быть свойство `content=""`
+  Для работы этих Псевдо-элементов в оригинальном селекторе должно быть свойство `content=''`
   
   ```css
    .heart {
@@ -258,7 +258,7 @@ content: '''
     }
     .heart::after {
       background-color: red;
-      content: "";
+      content: '';
       border-radius: 50%;
       position: absolute;
       width: 50px;
@@ -267,7 +267,7 @@ content: '''
       left: 25px;
     }
     .heart::before {
-      content: "";
+      content: '';
       background-color: red;
       border-radius: 50%;
       position: absolute;

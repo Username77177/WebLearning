@@ -45,21 +45,21 @@
         }
         
         #box1 {
-            right: 30%
+            right: 0%
         }
         
         #box2 {
-            left: 30%
+            left: 0%
         }
         
         #box3 {
             text-align: center;
             background-color: rgb(252, 252, 100);
             border-color: rgb(252, 252, 100);
-            left: 30%;
             border: none;
             width: 735px;
             height: 210px;
+            position: relative;
         }
         
         #box3>p {
@@ -138,10 +138,12 @@
     <p>Margin - отступ от границы элемента до границы следующего элемента</p>
     <div class="block">
         <div id="box3" class="box">
+            <div class="box" id="box1"></div>
+            <div id="box2" class="box"></div>
             <p>Margin</p>
         </div>
-        <div class="box" id="box1"></div>
-        <div id="box2" class="box"></div>
+
+
     </div>
     <p>Если отступов (<code>margin</code>) несколько, то их отступы суммируются</p>
     <p>То есть, если у тега<code>p</code> отступ 5px, а за ним идёт ещё один параграф с таким же отступом, то расстояние между ними будет <strong>всего 5px</strong></p>

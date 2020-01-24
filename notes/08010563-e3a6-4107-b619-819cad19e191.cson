@@ -1,0 +1,64 @@
+createdAt: "2020-01-24T09:45:04.303Z"
+updatedAt: "2020-01-24T09:58:30.096Z"
+type: "MARKDOWN_NOTE"
+folder: "32a2e213603400f3850a"
+title: "Словарь web-разработчика"
+tags: []
+content: '''
+  # Словарь web-разработчика
+  
+  flex - гибкий
+  
+  width - ширина
+  
+  height - высота
+  
+  pixel (*px*) - пиксель
+  
+  keyframes - ключевые фрагменты
+  
+  margin - поле
+  
+  border - граница
+  
+  padding - набивка
+  
+  align - выровнять
+  
+  font - шрифт
+  
+  top - верх
+  
+  right - право
+  
+  bottom - низ
+  
+  left - лево
+  
+  background - фон
+  
+  none - отсутствует
+  
+  transition - невидимый
+  
+  anchor - якорь
+  
+  paragraph - параграф
+  
+  link - ссылка
+  
+  position - местоположение
+  
+  shadow - тень
+  
+  transform - трансформировать
+  
+  wrap - заворачивать
+  
+  main - главное
+  
+  shrink - резать
+'''
+linesHighlighted: []
+isStarred: false
+isTrashed: false
